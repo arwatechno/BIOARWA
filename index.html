@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about the human skeleton, its structure, and Skull.">
+    <title>The Human Skeleton</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(180deg, rgba(255,124,181,1) 0%, rgba(146,191,245,1) 100%);
+        }
+
+        header {
+            background-color: #2c186e;
+            color: #f896ff;
+            padding: 10px;
+            text-align: center;
+            height: 100px;
+        }
+
+        nav {
+            margin: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            background-color: #fff;
+            z-index: 1000;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #2c186e;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #2c186e;
+            border: solid 2px #333;
+            border-radius: 10px;
+            color: #f896ff;
+            padding: 7px;
+        }
+
+        section {
+            margin: 20px;
+        }
+
+        h2 {
+            color: #f7b180;
+            text-shadow: 0 0 10px #582500,
+                0 0 20px #582500,
+                0 0 40px #582500,
+                0 0 80px #582500;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: #ffff;
+            margin: 5px;
+            text-shadow: 0 0 10px #f896ff,
+                0 0 20px #f896ff,
+                0 0 40px #f896ff,
+                0 0 80px #f896ff;
+        }
+
+        .content {
+            padding: 50px;
+            border-bottom: solid 3px black;
+            max-width: 1000px;
+            margin: auto;
+            font-size: 20px;
+            color: #000000;
+        }
+
+        #main {
+            /* padding: 20px; */
+            display: grid;
+            grid-template-columns: px 60px;
+        }
+
+        /* 3D model beside text */
+        .section-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .section-container .content {
+            flex: 1;
+        }
+
+        iframe {
+            width: 500px;
+            height: 400px;
+            border: none;
+        }
+        #f5{
+            height: 250px;
+        }
+
+        @media (max-width: 800px) {
+            .section-container {
+                flex-direction: column;
+            }
+
+            iframe {
+                width: 100%;
+                height: 300px;
+            }
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 12px;
+        }
+        
+        #calculator {
+            padding: 20px;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        input[type="text"] {
+            padding: 15px;
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-align: right;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            margin: 5px;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            padding: 10px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        button:active {
+            background-color: #1a5a7f;
+        }
+        .operator {
+            background-color: #e67e22;
+            font-size: 30px;
+
+        }
+        .operator:hover {
+            background-color: #d35400;
+        }
+        .operator:active {
+            background-color: #a14000;
+        }
+        .equal {
+            background-color: #2ecc71;
+            font-size: 30px;
+
+        }
+        .equal:hover {
+            background-color: #27ae60;
+        }
+        .equal:active {
+            background-color: #1e8449;
+        }
+        span{
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>7amdoun El-rou7</h1>
+        <marquee direction="">Your guide to count bones in the skeleton system from Daif Academy sec3 book by Arwa Tamer
+            2025 chapter 1 l 3 & 4</marquee>
+    </header>
+
+    <nav>
+        <a href="#The Skeleton">The Skeleton</a>
+        <a href="#structure">Structure</a>
+        <a href="#Skull">Skull</a>
+        <a href="#vertebral column">vertebral column</a>
+        <a href="#thoracic cage">thoracic cage</a>
+        <a href="#upper limp">upper limp</a>
+        <a href="#lower limp">lower limp</a>
+        <a href="#shoulder">shoulder</a>
+        <a href="#pelvis">pelvis</a>
+
+
+    </nav>
+
+    <div id="main">
+
+        <section id="The Skeleton">
+            <div class="section-container">
+                <div class="content">
+                    <h2>The Skeleton</h2>
+                    <ul>
+                        <li>
+                            <p>
+                                <b>Bones </b>
+                                <br>
+                                living and rigid connective tissues
+                                <br>
+                                New born:<b>300</b>==>Adult:<b>206</b>
+                            </p>
+                        </li>
+                        <li>
+                            <p>Each bone has its shape and size suitable for its function</p>
+                        </li>
+                        <li>Types of bones
+                            <ul>
+                                <li>Flat</li>
+                                <li>Long</li>
+                                <li>Short</li>
+                                <li>Irregular</li>
+                                <li>Seasamoid</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <img src="sk.png">
+            </div>
+        </section>
+
+        <section id="structure">
+            <div class="section-container">
+                <div class="content">
+                    <h2>Structure of the Skeleton</h2>
+                    <ul>
+                        <li><strong>Axial Skeleton:</strong>
+                            <ul>
+                                <li>Skull</li>
+                                <li>Vertebral Column</li>
+                                <li>Thoracic Cage</li>
+                            </ul>
+                        </li>
+                        <li><strong>Appendicular Skeleton:</strong>
+                            <ul>
+                                <li>Pectoral Girdle & Upper Limbs</li>
+                                <li>Pelvic Girdle & Lower Limbs</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <iframe id="f1" title="Human Bones" src="https://sketchfab.com/models/92f7c2ab8f5246d2b15b8fc950ad31dd/embed">
+                </iframe>
+            </div>
+    </div>
+    </section>
+
+    <section id="Skull">
+        <div class="section-container">
+            <div class="content">
+                <h2>Skull (Cranium): 29 bones</h2>
+                <p>The bony case that protects the brain</p>
+                <ol>
+                    <li><strong>Posterior part (Cerebral part):</strong> the cavity that contains the brain and a
+                        <span>Foramen Magnum</span> for the spinal cord <span id="no">8 bones serrated</span>
+                    </li>
+                    <li><strong>Anterior part (Facial part):</strong> contains the face and sense organs and 2 jaws
+                        <span id="no">14 bones</span>
+                    </li>
+                    <li><strong>Associated bones:</strong><span id="no">7 bones</span></li>
+                </ol>
+            </div>
+            <iframe id="f2" title="Skull" src="https://sketchfab.com/models/1a9db900738d44298b0bc59f68123393/embed"></iframe>
+        </div>
+    </section>
+
+    <section id="vertebral column">
+        <div class="section-container">
+            <div class="content">
+                <h2>Vertebral Column</h2>
+                <p>33 vertebrea & 26 bones</p>
+                <ul>
+                    <li><strong>7 Cervical Vertebrae </strong>: 7 vertebrea</li>
+                    <li><strong>12 Thoracic Vertebrae </strong>: 12 vertebrea</li>
+                    <li><strong>5 Lumbar Vertebrae </strong>: 5 vertebrea</li>
+                    <li><strong>1 Sacrum </strong>: fused bone at the base of the spine</li>
+                    <li><strong>1 Coccyx </strong>: tailbone</li>
+                </ul>
+            </div>
+            <iframe id="f3" title="Vertebrae vertebral column color labelled"
+                src="https://sketchfab.com/models/a69260c4468a4104a53cddd3dbbe76fb/embed"> </iframe>
+        </div>
+    </section>
+
+    <section id=" Thoracic Cage">
+        <div class="section-container">
+            <div class="content">
+                <h2>Thoracic Cage</h2>
+                <p>12 Pairs of Ribs</p>
+                <ul>
+                            <li><strong>7 True Ribs</strong>: directly attached to the sternum</li>
+                            <li><strong>3 False Ribs</strong>: indirectly attached to the sternum</li>
+                            <li><strong>2 Floating Ribs</strong>: no attachment to the sternum</li>
+                    </li>
+                    <li><strong>Sternum</strong>: breastbone in the center of the chest
+            </div>
+            <iframe id="f4" title="Thoracic Cage / Caja Torácica"
+            src="https://sketchfab.com/models/8e467073d7f149d0a92a712a62326447/embed"> </iframe> 
+        </div>    
+        </section>
+    <section id="shoulder">
+        <div class="section-container">
+            <div class="content">
+                <h2>shoulder : 2 x 2 bones</h2>
+                <ol>
+                    <li><strong>scapula:</strong>have glenoid cavity</li>
+                    <li><strong>clvicle:</strong></li>
+                </ol>
+            </div>
+            <iframe id="f5" title="Bones of the shoulder (left side)"
+                src="https://sketchfab.com/models/fe33f07d2a494d54ac6cd4e9ff8cd1e3/embed"> </iframe>
+        </div>
+    </section>
+
+    <section id="upper limp">
+        <div class="section-container">
+            <div class="content">
+                <h2>upper limp : 30 x 2 bones</h2>
+                <ul>
+                    <li><strong>Humerus:</strong>upper arm region</li>
+                    <li><strong>ulna:</strong> fore arm </li>
+                    <li><strong>radius:</strong> fore arm </li>
+                    <li><strong>8 carpals:</strong>hand(wrist) </li>
+                    <li><strong>5 Metacarpals:</strong>hand(palm) </li>
+                    <li><strong>14 phalanges:</strong>hand(digits) </li>
+                </ul>
+            </div>
+            <iframe id="f6" title="Human arm bones" 
+            src="https://sketchfab.com/models/cd61a00896f24338b394f44772b5a45d/embed">
+            </iframe>
+        </div>
+    </section>
+
+
+    <section id="pelvis">
+        <div class="section-container">
+            <div class="content">
+                <h2>pelvis : 1 x 2 bones</h2>
+                <p>Eachbone is a half consists of 3 fused bones</p>
+                <ol>
+                    <li><strong>Illium</strong> </li>
+                    <li><strong>Pubis</strong> </li>
+                    <li><strong>Ischium</strong> </li>
+                </ol>
+                <p> Sucral bone and cocxygeal are from the vertebral coumn not the pelvis bones</p>
+            </div>
+            <iframe id="f7" title="Pelvis - 3D Scan" 
+            src="https://sketchfab.com/models/ee6e3f446510432db5a4b2085ef5dd48/embed">
+            </iframe>
+        </div>
+    </section>
+
+
+    <section id="lower limp">
+        <div class="section-container">
+            <div class="content">
+                <h2>lower limp : 30 x 2 bones</h2>
+                <ul>
+                    <li><strong>Femur:</strong>Thigh region</li>
+                    <li><strong>Patella:</strong>Knee cap </li>
+                    <li><strong>Febual:</strong>shank </li>
+                    <li><strong>Tibia:</strong>shank </li>
+                    <li><strong>7 Tarsals:</strong>foot(ankle) </li>
+                    <li><strong>5 Metatarsals:</strong>foot </li>
+                    <li><strong>14 phalanges:</strong>foot(toes) </li>
+                </ul>
+            </div>
+            <iframe id="f8" title="Human leg bones" src="https://sketchfab.com/models/74d0ab0c280947968c3d1925b7c119ea/embed">
+            </iframe>
+        </div>
+    </section>
+
+    </div>
+
+    <div id="calculator">
+        <input type="text" id="result" readonly><span> bones</span>
+        <br>
+        <button onclick="appendToResult('29')">skull</button>
+        <button onclick="appendToResult('25')">thoracic cage</button>
+        <button onclick="appendToResult('26')">vertebral column</button>
+        <br>
+        <button onclick="appendToResult('2')">shoulder</button>
+        <button onclick="appendToResult('30')">upper limp</button>
+        <br>
+        <button onclick="appendToResult('2')">pelvis</button>
+        <button onclick="appendToResult('30')">lower limp</button>
+        <br>
+        <button class="operator" onclick="appendToResult('+')">+</button>
+        <button class="equal" onclick="calculate()">=</button>
+        <button class="operator" onclick="clearResult()">C</button>
+
+    </div>
+    <footer>
+        &copy; S'25 | Arwa Tamer
+    </footer>
+    
+<script>
+    function appendToResult(value) {
+        document.getElementById('result').value += value;
+    }
+
+    function clearResult() {
+        document.getElementById('result').value = '';
+    }
+
+    function deleteLast() {
+        let result = document.getElementById('result').value;
+        document.getElementById('result').value = result.slice(0, -1);
+    }
+
+    function calculate() {
+        try {
+            let result = eval(document.getElementById('result').value);
+            document.getElementById('result').value = result;
+        } catch (error) {
+            document.getElementById('result').value = 'Error';
+        }
+    }
+</script>
+
+</body>
+
+</html>
+<!-- pelvis -->
+<!-- <div> <iframe title="Pelvis - 3D Scan"src="https://sketchfab.com/models/ee6e3f446510432db5a4b2085ef5dd48/embed"> </iframe> frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share  <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/pelvis-3d-scan-ee6e3f446510432db5a4b2085ef5dd48?utm_medium=embed&utm_campaign=share-popup&utm_content=ee6e3f446510432db5a4b2085ef5dd48" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Pelvis - 3D Scan </a> by <a href="https://sketchfab.com/HaloRenders?utm_medium=embed&utm_campaign=share-popup&utm_content=ee6e3f446510432db5a4b2085ef5dd48" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Halo Renders </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=ee6e3f446510432db5a4b2085ef5dd48" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div> -->
+<!-- shoulder -->
+<!-- <div class="sketchfab-embed-wrapper"> <iframe title="Bones of the shoulder (left side)" src="https://sketchfab.com/models/fe33f07d2a494d54ac6cd4e9ff8cd1e3/embed"> </iframe>frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share  <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/bones-of-the-shoulder-left-side-fe33f07d2a494d54ac6cd4e9ff8cd1e3?utm_medium=embed&utm_campaign=share-popup&utm_content=fe33f07d2a494d54ac6cd4e9ff8cd1e3" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Bones of the shoulder (left side) </a> by <a href="https://sketchfab.com/cetra_physio?utm_medium=embed&utm_campaign=share-popup&utm_content=fe33f07d2a494d54ac6cd4e9ff8cd1e3" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> cetra_physio </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=fe33f07d2a494d54ac6cd4e9ff8cd1e3" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div> -->
