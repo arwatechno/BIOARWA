@@ -48,6 +48,13 @@
             padding: 7px;
         }
 
+        nav .burger-menu {
+            display: none;
+            cursor: pointer;
+            font-size: 30px;
+            color: #2c186e;
+        }
+
         section {
             margin: 20px;
         }
@@ -80,12 +87,10 @@
         }
 
         #main {
-            /* padding: 20px; */
             display: grid;
             grid-template-columns: px 60px;
         }
 
-        /* 3D model beside text */
         .section-container {
             display: flex;
             gap: 20px;
@@ -101,9 +106,6 @@
             width: 500px;
             height: 400px;
             border: none;
-        }
-        #f5{
-            height: 250px;
         }
 
         @media (max-width: 800px) {
@@ -127,7 +129,7 @@
             width: 100%;
             font-size: 12px;
         }
-        
+
         #calculator {
             padding: 20px;
             border: none;
@@ -182,8 +184,34 @@
         .equal:active {
             background-color: #1e8449;
         }
-        span{
-            font-size: 30px;
+        @media (max-width: 600px) {
+            header {
+                height: auto;
+                padding: 20px;
+            }
+
+            nav a {
+                display: none;
+            }
+
+            nav .burger-menu {
+                display: block;
+                font-size: 30px;
+                color: #2c186e;
+            }
+
+            nav.active a {
+                display: block;
+                padding: 10px;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            footer {
+                font-size: 10px;
+            }
         }
     </style>
 </head>
@@ -191,24 +219,23 @@
 <body>
     <header>
         <h1>7amdoun El-rou7</h1>
-        <marquee direction="">Your guide to count bones in the skeleton system from Daif Academy sec3 book by Arwa Tamer
-            2025 chapter 1 l 3 & 4</marquee>
+        <marquee direction="">Your guide to count bones in the skeleton system from Daif Academy sec3 book by Arwa Tamer 2025 chapter 1 l 3 & 4</marquee>
     </header>
 
     <nav>
+        <span class="burger-menu" onclick="toggleMenu()">☰</span>
         <a href="#The Skeleton">The Skeleton</a>
         <a href="#structure">Structure</a>
         <a href="#Skull">Skull</a>
-        <a href="#vertebral column">vertebral column</a>
-        <a href="#thoracic cage">thoracic cage</a>
-        <a href="#upper limp">upper limp</a>
-        <a href="#lower limp">lower limp</a>
-        <a href="#shoulder">shoulder</a>
-        <a href="#pelvis">pelvis</a>
-
-
+        <a href="#vertebral column">Vertebral Column</a>
+        <a href="#thoracic cage">Thoracic Cage</a>
+        <a href="#upper limp">Upper Limp</a>
+        <a href="#lower limp">Lower Limp</a>
+        <a href="#shoulder">Shoulder</a>
+        <a href="#pelvis">Pelvis</a>
     </nav>
 
+       
     <div id="main">
 
         <section id="The Skeleton">
@@ -440,12 +467,11 @@
             document.getElementById('result').value = 'Error';
         }
     }
-</script>
-
+        function toggleMenu() {
+            var nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>
-<!-- pelvis -->
-<!-- <div> <iframe title="Pelvis - 3D Scan"src="https://sketchfab.com/models/ee6e3f446510432db5a4b2085ef5dd48/embed"> </iframe> frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share  <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/pelvis-3d-scan-ee6e3f446510432db5a4b2085ef5dd48?utm_medium=embed&utm_campaign=share-popup&utm_content=ee6e3f446510432db5a4b2085ef5dd48" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Pelvis - 3D Scan </a> by <a href="https://sketchfab.com/HaloRenders?utm_medium=embed&utm_campaign=share-popup&utm_content=ee6e3f446510432db5a4b2085ef5dd48" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Halo Renders </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=ee6e3f446510432db5a4b2085ef5dd48" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div> -->
-<!-- shoulder -->
-<!-- <div class="sketchfab-embed-wrapper"> <iframe title="Bones of the shoulder (left side)" src="https://sketchfab.com/models/fe33f07d2a494d54ac6cd4e9ff8cd1e3/embed"> </iframe>frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share  <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/bones-of-the-shoulder-left-side-fe33f07d2a494d54ac6cd4e9ff8cd1e3?utm_medium=embed&utm_campaign=share-popup&utm_content=fe33f07d2a494d54ac6cd4e9ff8cd1e3" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Bones of the shoulder (left side) </a> by <a href="https://sketchfab.com/cetra_physio?utm_medium=embed&utm_campaign=share-popup&utm_content=fe33f07d2a494d54ac6cd4e9ff8cd1e3" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> cetra_physio </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=fe33f07d2a494d54ac6cd4e9ff8cd1e3" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div> -->
